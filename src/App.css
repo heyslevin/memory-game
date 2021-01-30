@@ -2,6 +2,14 @@
 .card {
 }
 
+.no-top {
+  margin-top: 0 !important;
+}
+
+.gray-text {
+  color: gray;
+}
+
 .blue {
   color: blue;
 }
