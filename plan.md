@@ -8,6 +8,14 @@
 - Board
   - Card
 
+## State
+
+- Data in App
+  - High Score :white_check_mark:
+  - Current Score :white_check_mark:
+  - Original Cards :white_check_mark:
+  - Filtered Cards :x:
+
 ## Pseudo Code required
 
 - Generate random cards while
