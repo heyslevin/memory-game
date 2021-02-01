@@ -1,3 +1,6 @@
+import React, { Component, useState, useEffect } from "react";
+import ReactDOM from "react-dom";
+
 import "./App.css";
 import apache from "./img/apache.jpg";
 import barril from "./img/barril.jpg";
@@ -49,40 +52,40 @@ function Header(props) {
   );
 }
 
+function Card(props) {
+  return (
+    <div className="flex-small one-fourth card red">
+      <img src={valiente} alt="" className="responsive-image" />
+    </div>
+  );
+}
+
+function Board(props) {
+  return (
+    <div>
+      <div className="flex-row">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
+
+      <div className="flex-row">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="App">
       <div className="small-container">
         <Header />
-        <div className="flex-row">
-          <div className="flex-small one-fourth card red">
-            <img src={valiente} alt="" className="responsive-image" />
-          </div>
-          <div className="flex-small one-fourth card blue">
-            <img src={sirena} alt="" className="responsive-image" />
-          </div>
-          <div className="flex-small one-fourth card red">
-            <img src={apache} alt="" className="responsive-image" />
-          </div>
-          <div className="flex-small one-fourth card blue">
-            <img src={corazon} alt="" className="responsive-image" />
-          </div>
-        </div>
-
-        <div className="flex-row">
-          <div className="flex-small one-fourth card red">
-            <img src={soldado} alt="" className="responsive-image" />
-          </div>
-          <div className="flex-small one-fourth card blue">
-            <img src={luna} alt="" className="responsive-image" />
-          </div>
-          <div className="flex-small one-fourth card red">
-            <img src={diablo} alt="" className="responsive-image" />
-          </div>
-          <div className="flex-small one-fourth card blue">
-            <img src={barril} alt="" className="responsive-image" />
-          </div>
-        </div>
+        <Board />
       </div>
     </div>
   );
