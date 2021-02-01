@@ -2,23 +2,26 @@
 
 ## Components
 
-- Header
-  - High Score
-  - Current Score
-- Board
-  - Card
+- App
+  - Header
+    - High Score
+    - Current Score
+  - Board
+    - Card
 
 ## State
 
-- Data in App
+- Data in App. Does it pass the state test?
   - High Score :white_check_mark:
   - Current Score :white_check_mark:
   - Original Cards :white_check_mark:
   - Filtered Cards :x:
+- Common owner:
+  - **App**
 
 ## Pseudo Code required
 
-- Generate random cards while
+- Generate random cards
   - Array with all available cards
   - Shuffle Array, and get first 8 values
     - const shuffled = [...array].sort(() => 0.5 - Math.random())
