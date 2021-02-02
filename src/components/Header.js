@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import HighScore from "./HighScore";
 import CurrentScore from "./CurrentScore";
 
 function Header(props) {
+  const { currentScore, highScore } = props;
+
   return (
     <div>
       <div className="flex-row">
@@ -14,7 +16,7 @@ function Header(props) {
           </p>
         </div>
         <HighScore />
-        <CurrentScore />
+        <CurrentScore currentScore={currentScore} highScore={highScore} />
       </div>
       <hr />
     </div>

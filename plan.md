@@ -4,8 +4,7 @@
 
 - App
   - Header
-    - High Score
-    - Current Score
+    - Score
   - Board
     - Card
 
@@ -22,8 +21,8 @@
 ## Pseudo Code required
 
 - Generate random cards
-  - Array with all available cards
-  - Shuffle Array, and get first 8 values
+  - :white_check_mark: Array with all available cards
+  - :white_check_mark: Shuffle Array, and get first 8 values
     - const shuffled = [...array].sort(() => 0.5 - Math.random())
 - Click on card checks if card has been clicked before
   - new "selected" array
