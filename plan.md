@@ -23,15 +23,16 @@
 - Generate random cards
   - :white_check_mark: Array with all available cards
   - :white_check_mark: Shuffle Array, and get first 8 values
-    - const shuffled = [...array].sort(() => 0.5 - Math.random())
-- Click on card checks if card has been clicked before
-  - new "selected" array
-  - onclick check includes: selectedArray.includes(clickedItem)
-  - If false:
-    - onclick push item into selected array
-    - score++
-    - generateRandomCards() // Aka play again
+    - :white_check_mark: const shuffled = [...array].sort(() => 0.5 - Math.random())
+- :white_check_mark: Click on card checks if card has been clicked before
+  - :white_check_mark: new "selected" array
+  - :white_check_mark: Card element is passed a card
+  - :white_check_mark: onclick check includes: selectedArray.includes(clickedItem)
+  - :white_check_mark: If false:
+    - :white_check_mark: onclick push item into selected array
+    - :white_check_mark: score++
+    - :white_check_mark: generateRandomCards() // Aka play again
   - If true:
-    - alert("Game over")
+    - :white_check_mark: alert("Game over")
     - if score > highscore, highscore = score
     - generateRandomCards() // Aka play again

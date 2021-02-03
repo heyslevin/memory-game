@@ -15,10 +15,24 @@ import soldado from "../img/soldado.jpg";
 import valiente from "../img/valiente.jpg";
 import venado from "../img/venado.jpg";
 
+import violin from "../img/violin.jpg";
+import bandolon from "../img/bandolon.jpg";
+import arbol from "../img/arbol.jpg";
+import botella from "../img/botella.jpg";
+import escalera from "../img/escalera.jpg";
+import gorrito from "../img/gorrito.jpg";
+import muerte from "../img/muerte.jpg";
+import pera from "../img/pera.jpg";
+import pajaro from "../img/pajaro.jpg";
+import garza from "../img/garza.jpg";
+import catrin from "../img/catrin.jpg";
+import dama from "../img/dama.jpg";
+import paraguas from "../img/paraguas.jpg";
+
 function Board(props) {
   const [shuffledCards, setShuffledCards] = useState([]);
   const [selectedCards, setSelectedCards] = useState([]);
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   const openModal = () => {
     setOpen(true);
@@ -41,6 +55,19 @@ function Board(props) {
     soldado,
     valiente,
     venado,
+    violin,
+    bandolon,
+    arbol,
+    botella,
+    escalera,
+    gorrito,
+    muerte,
+    pera,
+    pajaro,
+    garza,
+    catrin,
+    dama,
+    paraguas,
   ];
 
   let shuffled = [];
@@ -52,6 +79,8 @@ function Board(props) {
   function handleClick(item) {
     if (selectedCards.includes(item)) {
       setOpen(true);
+      props.resetScore();
+      setSelectedCards([]);
     } else {
       selectedCards.push(item);
       setSelectedCards(selectedCards);
@@ -61,6 +90,7 @@ function Board(props) {
 
   useEffect(() => {
     cardShuffler();
+    props.updateHighScore();
   }, [props.currentScore]);
 
   return (

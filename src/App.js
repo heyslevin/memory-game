@@ -11,11 +11,26 @@ function App() {
     setCurrentScore(currentScore + 1);
   }
 
+  function updateHighScore() {
+    if (currentScore >= highScore) {
+      setHighScore(currentScore);
+    }
+  }
+
+  function resetScore() {
+    setCurrentScore(0);
+  }
+
   return (
     <div className="App">
       <div className="small-container">
         <Header currentScore={currentScore} highScore={highScore} />
-        <Board currentScore={currentScore} addToScore={addToScore} />
+        <Board
+          updateHighScore={updateHighScore}
+          currentScore={currentScore}
+          addToScore={addToScore}
+          resetScore={resetScore}
+        />
       </div>
     </div>
   );
