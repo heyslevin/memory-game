@@ -13,4 +13,4 @@ It's practice to understand the following topics:
 
 ## Where can I play it?
 
-The link will be here when the project is finished.
+https://heyslevin.github.io/memory-game/
