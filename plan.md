@@ -34,5 +34,5 @@
     - :white_check_mark: generateRandomCards() // Aka play again
   - If true:
     - :white_check_mark: alert("Game over")
-    - if score > highscore, highscore = score
-    - generateRandomCards() // Aka play again
+    - :white_check_mark: if score > highscore, highscore = score
+    - :white_check_mark: generateRandomCards() // Aka play again in useEffect
