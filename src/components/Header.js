@@ -15,8 +15,8 @@ function Header(props) {
             click on any card more than once or else your score resets to zero.{" "}
           </p>
         </div>
-        <HighScore />
-        <CurrentScore currentScore={currentScore} highScore={highScore} />
+        <HighScore highScore={highScore} />
+        <CurrentScore currentScore={currentScore} />
       </div>
       <hr />
     </div>
